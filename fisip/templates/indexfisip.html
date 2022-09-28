@@ -4,7 +4,21 @@
 
     <center>
         <h1>FAKULTAS ILMU SOSIAL DAN ILMU POLITIK</h1>
+        <img src="\static\images\untirta.png" height="350px">
     </center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(14, 116, 31, 0.568) ;">Sejarah</h4>
+    <p style="font-family: 'times new roman'">Pada tanggal 1 Februari 2006 telah dikeluarkan SK No. 295/D/T/2006 tentang Perpanjangan izin penyelenggaraan Program studi  Ilmu Administrasi Negara dan Ilmu Komunikasi selama 4 tahun.</p>
+    <p style="font-family: 'times new roman'">{{ gbrumum }}</p>
+    <p style="font-family: 'times new roman'">FISIP Untirta terus berpacu dan berkembang untuk berusaha mensejajarkan diri dengan fakultas yang lebih dulu berdiri dengan mengeluarkan jurus-jurus strategis baik dibidang pendidikan, pengajaran, pengabdian masyarakat, sarana dan prasarana sebagai wujud dari Tri Dharma Perguruan Tinggi.</p>
+    
+    <h4 style="background-color: rgba(73, 198, 148, 0.43);">Program Studi</h4>
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
     
     <h2>Daftar Prodi :</h2>
     

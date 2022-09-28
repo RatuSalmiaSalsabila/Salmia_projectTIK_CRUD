@@ -4,7 +4,21 @@
 
     <center>
         <h1>FAKULTAS KEGURUAN DAN ILMU PENDIDIKAN</h1>
+        <img src="\static\images\fkip.png" height="350px">
     </center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(60, 144, 123, 0.568) ;">Sejarah</h4>
+    <p style="font-family: 'times new roman'">Fakultas Keguruan dan Ilmu Pendidikan (FKIP) Universitas Sultan Ageng Tirtayasa (Untirta) memiliki 18 program studi. Program studi FKIP terbanyak bidang pendidikan yang Untirta miliki tersebut paling banyak di minati pada Seleksi Nasional Masuk Perguruan Tinggi Negeri (SNMPTN), Seleksi Bersama Masuk Perguruan Tinggi Negeri (SBMPTN) menjadi fakultas yang paling banyak di minati oleh calon mahasiswa baru. FKIP Untirta sudah ada sejak lama pada awal berdiri FKIP Untirta memiliki dua program studi yakni Program Studi Administrasi Pendidikan (AdPend) dan Program Studi Pendidikan Luar Sekolah (PLS) dengan jenjang pendidikan Sarjana (S1).</p>
+    <p style="font-family: 'times new roman'">{{ gbrumum }}</p>
+    <p style="font-family: 'times new roman'">FKIP Untirta terus berkembang sesuai dengan tuntutan masyarakat, sehingga FKIP Untirta kembali membuka program studi yakni Program Pendidikan Guru Taman Kanak-kanak (PGTK) pada 1994, dan beberapa tahun kemudian membuka kembali Program Studi Pendidikan Bahasa Inggris, Pendidikan Biologi dan Pendidikan Matematika. Program studi PGTK telah diubah menjadi Program Pendidikan Guru Pendidikan Anak Usia Dini (PGPAUD) dengan surat keputusan Menteri Pendidikan Nasional Nomor: 105/D/O/2010.</p>
+    
+    <h4 style="background-color: rgba(32, 185, 155, 0.43);">Program Studi</h4>
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
     
     <h2>Daftar Prodi :</h2>
     
