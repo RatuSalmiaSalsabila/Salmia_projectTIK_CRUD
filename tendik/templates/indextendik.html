@@ -1,0 +1,90 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+<body>
+    <center>
+      <h1>TENDIK FKIP</h1>
+    </center>
+    <br>
+   
+    
+    <center>
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>NIP</th>
+            <th>Nama</th>
+            <th>Jabatan</th>
+        </tr>
+        
+            {% for tendik in educator %}
+            <tr>
+                <td>{{tendik.no}}</td>
+                <td>{{tendik.nip}}</td>
+                <td>{{tendik.nama}}</td>
+                <td>{{tendik.jabatan}}</td>
+             
+    
+    
+            </tr>
+            {% endfor %}
+        
+    </table>
+  
+    </center>
+    </body>
+    <style>
+        body {
+          background-image: linear-gradient(to right, #ebc261, #FF9494);
+          margin-left: 10px;
+          margin-right: 10px;
+          padding: 0;
+      }
+      
+      nav {
+          top: 0;
+          left: 0;
+          position: fixed;
+          height: 80px;
+          width: 100%;
+          box-sizing: border-box;
+          background: rgba(0, 0, 0, 0.5);
+          border-bottom: 1px solid white;
+      }
+      
+      .logo {
+          float: left;
+          height: 10px;
+          font-size: 36px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: white;
+          padding: 20px 20px;
+          justify-content: space-around;
+      }
+      
+      nav ul {
+          margin: 0;
+          padding: 0;
+          float: right;
+          list-style: none;
+          display: flex;
+      }
+      
+      nav ul li a {
+          font-size: 10px;
+          font-weight: bold;
+          color: white;
+          line-height: 80px;
+          text-decoration: none;
+          padding: 12px 30px;
+      }
+      
+      nav ul li a:hover {
+          border-radius: 10px;
+          background: rgba(162, 57, 57, 0.8);
+      }
+      </style>
+   
+{% endblock %}
