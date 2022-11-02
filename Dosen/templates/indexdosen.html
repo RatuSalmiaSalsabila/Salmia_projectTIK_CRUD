@@ -19,8 +19,9 @@
             <th>Email</th>
             <th>Foto</th>
         </tr>
-        {% for dosen in lecturer %}
+        {% for Dosen in lecturer %}
           <tr>
+              <td><a href="{% url 'ubah_dosen' dosen.id %}">{{dosen.no}}</a></td>
               <td>{{dosen.no}}</td>
               <td>{{dosen.nip}}</td>
               <td>{{dosen.nama}}</td>
@@ -31,12 +32,21 @@
                   <img src="{{ dosen.foto.url }}" width="100px">
                   {% endif %}
               </td>
+              <td>
+                <a href="{% url 'hapus_dosen' dosen.id %}" class="btn btn-danger">Hapus</a>
+
+              </td>
+              <td>
+
+                
+              </td>
   
   
           </tr>
           {% endfor %}
       
   </table>
+  <a href="http://127.0.0.1:8000/tambah-dosen/">Tambah Dosen</a>
 
   </center>
   </body>

@@ -28,8 +28,17 @@ from pascasarjana.views import prodi8
 from profil.views import profil
 from univ.views import univ
 from Dosen.views import dosen
-from Mahasiswa.views import mahasiswa
+from Dosen.views import tambah_dosen
+from Dosen.views import ubah_dosen
+from Dosen.views import hapus_dosen
+from Mahasiswa.views import Mahasiswa
+from Dosen.views import tambah_mahasiswa
+from Dosen.views import ubah_mahasiswa
+from Dosen.views import hapus_mahasiswa
 from tendik.views import tendik
+from Dosen.views import tambah_tendik
+from Dosen.views import ubah_tendik
+from Dosen.views import hapus_tendik
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -44,8 +53,17 @@ urlpatterns = [
     path('profil/', profil),
     path('univ/', univ),
     path('Dosen/', dosen), 
-    path('Mahasiswa/', mahasiswa),
+    path('tambah-dosen/', tambah_dosen, name='tambah_dosen'),
+    path('Dosen/ubah/<int:id_dosen>', ubah_dosen, name='ubah_dosen'),
+    path('Dosen/hapus/<int:id_dosen>', hapus_dosen, name='hapus_dosen'),
+    path('Mahasiswa/', Mahasiswa),
+    path('tambah-mahasiswa/', tambah_mahasiswa, name='tambah_mahasiswa'),
+    path('Mahasiswa/ubah/<int:id_mahasiswa>', ubah_mahasiswa, name='ubah_mahasiswa'),
+    path('Mahasiswa/hapus/<int:id_mahasiswa>', hapus_mahasiswa, name='hapus_mahasiswa'),
     path('tendik/', tendik),
+    path('tambah-tendik/', tambah_tendik, name='tambah_tendik'),
+    path('tendik/ubah/<int:id_tendik>', ubah_tendik, name='ubah_tendik'),
+    path('tendik/hapus/<int:id_tendik>', hapus_tendik, name='hapus_tendik'),
 ]
 
 if settings.DEBUG:

@@ -8,3 +8,4 @@ def prodi1(request):
     }
   
     return render(request, 'index.html', konteks)
+
